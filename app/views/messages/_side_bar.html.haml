@@ -1,0 +1,22 @@
+.side_bar
+  .side_bar__user-name
+    .side_bar__user-name__box
+      user_name
+      %ul.side_bar__user-name__box__menu
+        %li.side_bar__user-name__box__menu__send
+          = link_to "#", class: "menu" do
+            = icon('far', 'edit')
+        %li.side_bar__user-name__box__menu__edit
+          = link_to "#", class: "menu" do
+            = icon('fas', 'cog')
+  .side_bar__group-list
+    .side_bar__group-list__block
+      .side_bar__group-list__block__group-name
+        techcamp
+      .side_bar__group-list__block__text
+        まだメッセージがありません
+    .side_bar__group-list__block
+      .side_bar__group-list__block__group-name
+        techcamp
+      .side_bar__group-list__block__text
+        まだメッセージがありません    
