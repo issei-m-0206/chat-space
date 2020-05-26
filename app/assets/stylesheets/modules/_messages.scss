@@ -45,8 +45,13 @@
     height: calc(100vh - 100px);
     color: #ffffff;
     font-weight: bold;
-    &__block {
-        padding: 20px 20px 40px;
+    .block {
+      color: #ffffff;
+      padding: 20px 20px 40px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
       &__group-name {
         font-size: 15px;
       }

@@ -11,19 +11,10 @@
             = icon('fas', 'cog')
   .side_bar__group-list
     - current_user.groups.each do |group|
-      .group
+      .block
         = link_to '#' do
           .group__name
             = group.name
-          .group__message
+          .text
             メッセージはまだありません。
-    -# .side_bar__group-list__block
-    -#   .side_bar__group-list__block__group-name
-    -#     techcamp
-    -#   .side_bar__group-list__block__text
-    -#     まだメッセージがありません
-    -# .side_bar__group-list__block
-    -#   .side_bar__group-list__block__group-name
-    -#     techcamp
-    -#   .side_bar__group-list__block__text
-    -#     まだメッセージがありません    
+    
