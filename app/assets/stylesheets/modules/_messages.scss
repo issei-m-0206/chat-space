@@ -109,35 +109,41 @@
   }
   &__message-list {
     height: calc(100vh - 190px);
-    padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
-    .message {
-      padding-bottom: 40px;
-      .upper-message {
-        width: 250px;
-        margin-bottom: 10px;
-        display: flex;
-        
-        .upper-message__user-name{
-          font-size: 16px;
-          color: #333333;
-        }
-        .upper-message__date{
-          font-size: 12px;
-          color: #999999;
-          margin-left: 10px;
-        }
-      }
-      .lower-message {
-        .lower-message__content {
-          color: #434A54;
-          font-size: 14px;
+    .messages {
+      overflow: scroll;
+      height: calc(100vh - 190px);
+      padding: 46px 40px;
+      .message {
+        padding-bottom: 40px;
+        .upper-message {
+          width: 250px;
           margin-bottom: 10px;
+          display: flex;
+          
+          .upper-message__user-name{
+            font-size: 16px;
+            color: #333333;
+          }
+          .upper-message__date{
+            font-size: 12px;
+            color: #999999;
+            margin-left: 10px;
+          }
         }
-      } 
-    }   
-  }
+        .lower-message {
+          .lower-message__content {
+            color: #434A54;
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        } 
+      }
+    }  
+      
+  }   
+
   &__message-form {
     background-color: #d2d2d2;
     height: 90px;
