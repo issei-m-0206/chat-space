@@ -5,7 +5,7 @@
         = @group.name
       
       %ul.chat_main__group-info__group__list
-        MEMBER: 
+        Member :  
         %li.chat_main__group-info__group__member__list__member
           - @group.users.each do |user|
             = user.name
@@ -18,12 +18,7 @@
     .chat_main__message-list__box
       .messages
         = render @messages
-    -#   .chat_main__message-list__box__name
-    -#     masa
-    -#   .chat_main__message-list__box__days
-    -#     2020/05/22(Fri) 18:18:03
-    -# .chat_main__message-list__text
-    -#   おはよう！
+ 
     
   .chat_main__message-form
     .form__box

@@ -1,13 +1,16 @@
 * {
   box-sizing: border-box;
 }
+
 .wrapper {
   display: flex;
+  font-weight: lighter;
 }
 .side_bar {
   height: 100vh;
   width: 300px;
   background-color: #253141;
+  font-weight: lighter;
   &__user-name {
     height: 100px;
     display: flex;
@@ -20,7 +23,7 @@
       width: 260px;
       display: flex;
       justify-content: space-between; 
-      font-weight: bold;
+
       &__menu {        
         display: flex;    
         &__send {
@@ -51,13 +54,15 @@
       a {
         text-decoration: none;
         color: #fff;
+        .group-name {
+          font-size: 15px;
+        }
+        .text {
+          font-size: 11px;
+        }
+      
       }
-      &__group-name {
-        font-size: 15px;
-      }
-      &__text {
-        font-size: 11px;
-      }
+      
     }
   }
 }
@@ -86,6 +91,7 @@
         font-size: 12px;
         color: #999999;
         display: flex;
+        font-weight: lighter;
         &__member {
           margin: 0;
           padding-left: 10px;
@@ -148,8 +154,7 @@
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    // display: flex;
-    // justify-content: space-between;
+  
       .new_message {      
       height: 50px;
       width: 100%;
@@ -161,6 +166,7 @@
           display: block;
           width:100%;
           height: 100%;
+          padding: 0 40px 0 10px;
         }  
         .text { 
           
